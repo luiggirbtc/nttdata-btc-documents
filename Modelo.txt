@@ -1,0 +1,50 @@
+ CLIENTES - customer
+  - id
+  - tipo //personal - empresarial
+  - categoria  //persona - Titular o Firmante
+  - nombre	(empresarial)
+  - apellido
+  - tipo_documento
+  - numero_documento	(empresarial)
+  - telefono
+  - email
+
+TARJETA
+	- id
+	- cliente_id
+	- producto_id
+	- cuenta_principal
+	- cuentas_asociadas
+	- saldo
+	- saldo_disponible
+	
+
+PRODUCTOS -product
+  - id
+  - nombre
+  - tipo // pasivo  - activo
+  - categoria
+  - descripcion
+  - comision_mantenimiento
+  - maximo_transacciones
+  - comision_transaccion
+  
+CUENTAS
+  - id
+  - codigo
+  - titular[] // id_cliente
+  - firmante[] // id_cliente
+  - producto // id_producto
+  - saldo
+  - transacciones []//id_transaction
+
+  
+TRANSACCIONES
+  - id
+  - categoria 	//1 - Transacción, 2 - Transferencia, 3 - movimiento de tarjeta
+  - tipo // bancario(depósitos, retiro), credito(pago)
+  - descripcion
+  - cuenta_origen //id_account
+  - cuenta_destino
+  - moneda
+  - monto
