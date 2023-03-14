@@ -37,7 +37,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Kassio\",\r\n    \"surname\":\"Dogger\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"12344321\",\r\n    \"phone\":\"987654321\",\r\n    \"email\":\"kassio@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Pedrin\",\r\n    \"surname\":\"Casemiro\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"12344321\",\r\n    \"phone\":\"999654321\",\r\n    \"email\":\"Pedrin@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -56,6 +56,38 @@
 								"v1",
 								"customer",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckBalance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeDocument\":1,\r\n    \"numberDocument\":\"12345678\",\r\n    \"codeProduct\":\"640c24cd3b905b25cfa2f25a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/customer/check/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"check",
+								"balance"
 							]
 						}
 					},
@@ -194,7 +226,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Cuenta Corriente\",\r\n    \"type\":\"2\",\r\n    \"category\":\"1\",\r\n    \"description\":\"posee comisión de mantenimiento y sin límite de movimientos mensuales.\",\r\n    \"statement_fee\":0.0,\r\n    \"statement_transaction\":0.0,\r\n    \"max_operations\":100\r\n}",
+							"raw": "{\r\n    \"name\":\"Cuenta Ahorro\",\r\n    \"type\":\"1\",\r\n    \"category\":\"1\",\r\n    \"description\":\"libre de comisión por mantenimiento y con un límite máximo de movimientos mensuales.\",\r\n    \"statement_fee\":0.0,\r\n    \"statement_transaction\":0.0,\r\n    \"max_operations\":100\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -596,7 +628,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code_account\":\"193-1853946-0-25\",\r\n    \"holder_account\":[\"640bf4a36bf23c1c772da9d6\"],\r\n    \"authorized_signer\":[\"640cab9692b061681e7d4d86\"],\r\n    \"product\":\"640c24cd3b905b25cfa2f25a\",\r\n    \"balance\":250.0,\r\n    \"transactions\":[]\r\n}",
+							"raw": "{\r\n    \"code_account\":\"193-1853946-0-11\",\r\n    \"holder_account\":[\"640bf4a36bf23c1c772da9d6\"],\r\n    \"authorized_signer\":[\"640ff25de14dbb2e4076ef56\"],\r\n    \"product\":\"640ff1744975f4147b986d45\",\r\n    \"balance\":950.0,\r\n    \"transactions\":[]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -669,6 +701,29 @@
 								"account",
 								"id",
 								"640cc29c60650d1637e040a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByHolder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/account/holder/640bf4a36bf23c1c772da9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"holder",
+								"640bf4a36bf23c1c772da9d6"
 							]
 						}
 					},
