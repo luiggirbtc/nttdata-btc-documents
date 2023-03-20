@@ -94,13 +94,44 @@
 					"response": []
 				},
 				{
+					"name": "CheckOperations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeDocument\":1,\r\n    \"numberDocument\":\"12345678\",\r\n    \"codeProduct\":\"640c24cd3b905b25cfa2f25a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/customer/operations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "update",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id_customer\":\"640cab9692b061681e7d4d86\",\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Kassioxx\",\r\n    \"surname\":\"Doggerxx\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"12344377\",\r\n    \"phone\":\"987654377\",\r\n    \"email\":\"kassioxx@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"id_customer\":\"640cab9692b061681e7d4d86\",\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Kassio\",\r\n    \"surname\":\"Dogger\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"12344377\",\r\n    \"phone\":\"987654377\",\r\n    \"email\":\"kassio@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -187,6 +218,26 @@
 								"v1",
 								"customer",
 								"640bf4a36bf23c1c772da9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAPi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"v3",
+								"api-docs"
 							]
 						}
 					},
@@ -321,6 +372,26 @@
 								"v1",
 								"product",
 								"640bf4a36bf23c1c772da9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAPi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"v3",
+								"api-docs"
 							]
 						}
 					},
@@ -573,6 +644,29 @@
 					"response": []
 				},
 				{
+					"name": "FindBySourceAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/v1/operation/code/640cc29c60650d1637e040a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"v1",
+								"operation",
+								"code",
+								"640cc29c60650d1637e040a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete",
 					"request": {
 						"method": "DELETE",
@@ -589,6 +683,26 @@
 								"v1",
 								"operation",
 								"640bf4a36bf23c1c772da9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAPi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"v3",
+								"api-docs"
 							]
 						}
 					},
@@ -746,6 +860,26 @@
 								"v1",
 								"account",
 								"640bf4a36bf23c1c772da9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenAPi Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"v3",
+								"api-docs"
 							]
 						}
 					},
