@@ -37,7 +37,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Pedrin\",\r\n    \"surname\":\"Casemiro\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"12344321\",\r\n    \"phone\":\"999654321\",\r\n    \"email\":\"Pedrin@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"type_customer\":\"1\",\r\n    \"category_customer\":\"2\",\r\n    \"name\":\"Cristiano\",\r\n    \"surname\":\"Ronaldo\",\r\n    \"type_document\":\"1\",\r\n    \"number_document\":\"11223344\",\r\n    \"phone\":\"989812341\",\r\n    \"email\":\"cr7@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -184,7 +184,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/v1/customer/name/Kassioxx",
+							"raw": "http://localhost:8083/api/v1/customer/name/Luiggi",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -195,7 +195,7 @@
 								"v1",
 								"customer",
 								"name",
-								"Kassioxx"
+								"Luiggi"
 							]
 						}
 					},
@@ -530,6 +530,26 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "OpenAPi Cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"v3",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -565,7 +585,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"category\": 2,\r\n        \"type\": 1,\r\n        \"source_account\": \"640cc29c60650d1637e040a9\",\r\n        \"target_account\": \"193-1853964-0-30\",\r\n        \"currency\": \"PEN\",\r\n        \"amount\": 2345.0,\r\n        \"description\":\"Pago facturas diciembre\"\r\n}",
+							"raw": "{\r\n        \"category\": 2,\r\n        \"type\": 1,\r\n        \"source_account\": \"640cc29c60650d1637e040a9\",\r\n        \"target_account\": \"193-1853964-0-31\",\r\n        \"currency\": \"PEN\",\r\n        \"amount\": 123.0,\r\n        \"description\":\"Pago facturas enero\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -596,7 +616,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id_product\":\"\",\r\n    \"name\":\"Cuenta Corriente\",\r\n    \"type\":\"2\",\r\n    \"category\":\"1\",\r\n    \"description\":\"posee comisión de mantenimiento y sin límite de movimientos mensuales.\",\r\n    \"statement_fee\":0.0,\r\n    \"statement_transaction\":0.0,\r\n    \"max_operations\":100\r\n}",
+							"raw": "{\r\n    \"id_product\":\"640cf999662f294fc9169737\",\r\n    \"category\": 2,\r\n    \"type\": 1,\r\n    \"source_account\": \"640cc29c60650d1637e040a9\",\r\n    \"target_account\": \"193-1853964-0-30\",\r\n    \"currency\": \"PEN\",\r\n    \"amount\": 2345.0,\r\n    \"description\":\"Pago facturas diciembre\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -649,7 +669,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8086/api/v1/operation/code/640cc29c60650d1637e040a9",
+							"raw": "http://localhost:8086/api/v1/operation/code/ ",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -660,7 +680,7 @@
 								"v1",
 								"operation",
 								"code",
-								"640cc29c60650d1637e040a9"
+								" "
 							]
 						}
 					},
@@ -672,7 +692,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8086/api/v1/operation/640bf4a36bf23c1c772da9d6",
+							"raw": "http://localhost:8086/api/v1/operation/6427c007795f6f6507c2e542",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -682,7 +702,7 @@
 								"api",
 								"v1",
 								"operation",
-								"640bf4a36bf23c1c772da9d6"
+								"6427c007795f6f6507c2e542"
 							]
 						}
 					},
@@ -880,6 +900,32 @@
 							"path": [
 								"v3",
 								"api-docs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "btc-ms-notification",
+			"item": [
+				{
+					"name": "FindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/api/v1/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"v1",
+								"notifications"
 							]
 						}
 					},
