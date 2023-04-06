@@ -930,6 +930,246 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "OpenAPi Notification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"v3",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "btc-ms-wallet",
+			"item": [
+				{
+					"name": "OpenAPi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"v3",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/v1/wallet/640bf4a36bf23c1c772da9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								"640bf4a36bf23c1c772da9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/v1/wallet/id/642b379d4478e825a7e04687",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								"id",
+								"642b379d4478e825a7e04687"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idWallet\":\"642b379d4478e825a7e04687\",\r\n    \"typeDocument\":\"1\",\r\n    \"numberDocument\":\"12345678\",\r\n    \"phoneNumber\":\"123456789\",\r\n    \"email\":\"Luiggi@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/v1/wallet/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeDocument\":\"1\",\r\n    \"numberDocument\":\"12345678\",\r\n    \"phoneNumber\":\"123456789\",\r\n    \"email\":\"Luiggi@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/v1/wallet/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/v1/wallet/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "btc-ms-circuitbreaker",
+			"item": [
+				{
+					"name": "nttdata-btc-account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/hystrix",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"hystrix"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nttdata-btc-account Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/getAccount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"getAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nttdata-btc-account Copy 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/nttdata-btc-product/api/v1/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"nttdata-btc-product",
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
