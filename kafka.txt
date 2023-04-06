@@ -1,0 +1,21 @@
+bin\windows> .\zookeeper-server-start.bat ..\..\config\zookeeper.properties
+bin\windows> .\kafka-server-start.bat ..\..\config\server.properties
+
+
+sonarqb
+https://www.youtube.com/watch?v=osPi2qSwQ20&ab_channel=Framebits
+           StartKafka
+
+https://sacavix.com/2022/03/iniciando-apache-kafka-en-windows-offset-explorer/
+		   
+		   
+zookeeper-server-start.bat $env:KAFKA_CONFIG\zookeeper.properties
+kafka-server-start.bat $env:KAFKA_CONFIG\server.properties
+
+
+md C:\kafka\bitacora\data\kafka\broker_1,C:\kafka\bitacora\data\zookeeper
+
+
+
+
+
